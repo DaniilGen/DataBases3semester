@@ -1,0 +1,1 @@
+SELECT (first_name||' '||last_name) as ФИО, salary as ОКЛАД,trunc(salary*0.87) as "Оклад минус подоходный" FROM employees;

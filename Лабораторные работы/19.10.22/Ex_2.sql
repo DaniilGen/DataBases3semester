@@ -1,0 +1,2 @@
+SELECT first_name as Имя,last_name as Фамилия, job_id as Должность,date(hire_date) as "Дата приема на работу" FROM employees
+WHERE ((EXTRACT(YEAR FROM hire_date) BETWEEN 1995 AND 1999) OR (job_id in  ('AD_PRES','AD_VP','AD_ASST'))) LIMIT 5;

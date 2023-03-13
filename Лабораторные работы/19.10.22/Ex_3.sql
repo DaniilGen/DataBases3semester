@@ -1,0 +1,2 @@
+SELECT first_name as Имя,last_name as Фамилия, salary as Оклад,date(hire_date) as "Дата приема на работу", 
+EXTRACT(YEAR FROM age(now(),hire_date))*12 + EXTRACT(MONTH FROM age(now(),hire_date)) as "Проработано месяцев" FROM employees;
